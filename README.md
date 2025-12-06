@@ -36,6 +36,7 @@ uipro init --ai cursor      # Cursor
 uipro init --ai windsurf    # Windsurf
 uipro init --ai antigravity # Antigravity (.agent + .shared)
 uipro init --ai copilot     # GitHub Copilot
+uipro init --ai kiro        # Kiro
 uipro init --ai all         # All assistants
 ```
 
@@ -58,6 +59,7 @@ Copy the appropriate folders to your project:
 | Windsurf       | `.windsurf/workflows/ui-ux-pro-max.md` + `.shared/ui-ux-pro-max/`   |
 | Antigravity    | `.agent/workflows/ui-ux-pro-max.md` + `.shared/ui-ux-pro-max/`      |
 | GitHub Copilot | `.github/prompts/ui-ux-pro-max.prompt.md` + `.shared/ui-ux-pro-max/`|
+| Kiro           | `.kiro/steering/ui-ux-pro-max.md` + `.shared/ui-ux-pro-max/`        |
 
 ## Prerequisites
 
@@ -90,6 +92,14 @@ Build a landing page for my SaaS product
 ### Cursor / Windsurf / Antigravity
 
 Use the slash command to invoke the skill:
+
+```
+/ui-ux-pro-max Build a landing page for my SaaS product
+```
+
+### Kiro
+
+Type `/` in chat to see available commands, then select `ui-ux-pro-max`:
 
 ```
 /ui-ux-pro-max Build a landing page for my SaaS product

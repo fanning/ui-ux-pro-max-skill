@@ -42,6 +42,7 @@ Available stacks: `html-tailwind` (default), `react`, `nextjs`, `vue`, `svelte`,
 .windsurf/workflows/              # Windsurf workflow copy
 .agent/workflows/ui-ux-pro-max/   # Generic agent workflow copy
 .github/prompts/                  # GitHub Copilot prompt
+.kiro/steering/                   # Kiro steering file
 .shared/ui-ux-pro-max/            # Shared data copy
 ```
 
@@ -52,8 +53,8 @@ The search engine uses BM25 ranking combined with regex matching. Domain auto-de
 When modifying files, keep all agent workflows in sync:
 
 - **Data & Scripts** (`data/`, `scripts/`): Copy changes to `.shared/ui-ux-pro-max/` and `cli/assets/.shared/ui-ux-pro-max/`
-- **SKILL.md**: Update corresponding files in `.agent/`, `.cursor/`, `.windsurf/`, `.github/prompts/`
-- **CLI assets**: Copy all skill folders to `cli/assets/` (`.claude/`, `.cursor/`, `.windsurf/`, `.agent/`, `.github/`, `.shared/`)
+- **SKILL.md**: Update corresponding files in `.agent/`, `.cursor/`, `.windsurf/`, `.github/prompts/`, `.kiro/steering/`
+- **CLI assets**: Copy all skill folders to `cli/assets/` (`.claude/`, `.cursor/`, `.windsurf/`, `.agent/`, `.github/`, `.kiro/`, `.shared/`)
 
 ## Prerequisites
 

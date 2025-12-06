@@ -25,6 +25,9 @@ export function detectAIType(cwd: string = process.cwd()): DetectionResult {
   if (existsSync(join(cwd, '.github'))) {
     detected.push('copilot');
   }
+  if (existsSync(join(cwd, '.kiro'))) {
+    detected.push('kiro');
+  }
 
   // Suggest based on what's detected
   let suggested: AIType | null = null;
@@ -49,6 +52,8 @@ export function getAITypeDescription(aiType: AIType): string {
       return 'Antigravity (.agent/workflows/ + .shared/)';
     case 'copilot':
       return 'GitHub Copilot (.github/prompts/ + .shared/)';
+    case 'kiro':
+      return 'Kiro (.kiro/steering/ + .shared/)';
     case 'all':
       return 'All AI assistants';
   }
